@@ -1,6 +1,6 @@
 package:
   name: mcce
-  version: "1.0.2"
+  version: "1.0.3"
 
 source:
   git_url: https://github.com/newbooks/Stable-MCCE.git

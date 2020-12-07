@@ -1,6 +1,0 @@
-numpy:
-   - 1.11
-   - 1.12
-
-CONDA_BUILD_SYSROOT:
-  - /opt/MacOSX10.13.sdk        # [osx]

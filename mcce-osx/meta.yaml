@@ -1,0 +1,27 @@
+package:
+  name: mcce
+  version: "1.0.3"
+
+source:
+  git_url: https://github.com/newbooks/Stable-MCCE.git
+  git_tag: mcce-conda-osx
+
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
+
+  run:
+    - python
+    - numpy
+    - scipy
+    - matplotlib
+    - pandas
+    - xlrd
+    - openpyxl
+    - requests
+
+about:
+  home: https://gunnerlab.github.io/Stable-MCCE/
+  license: MIT

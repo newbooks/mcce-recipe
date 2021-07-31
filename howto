@@ -1,0 +1,35 @@
+How to release mcce to conda
+
+After code is updated in the master branch https://github.com/GunnerLab/Stable-MCCE
+
+1. Update conda branch of the new version
+Go to local repo,
+Linux:
+git checkout mcce-conda
+
+OSX:
+git checkout mcce-conda-osx
+
+git merge master
+git commit -a -m "comment on this update"
+git push
+git checkout master
+
+2. Update conda recipe
+cd ~/projects/mcce-recipe
+
+Linux:
+edit mcce/meta.yaml, version and remark
+conda activate mcce
+conda build mcce
+
+Linux:
+edit mcce-osx/meta.yaml, version and remark
+conda activate mcce
+conda build mcce-osx
+
+3. Run the upload command
+anaconda upload /home/jmao/miniconda3/conda-bld/linux-64/mcce-1.0.9-h9ac9557_0.tar.bz2
+
+This command depends on the "conda build". The actual command will be printed on the screen.
+

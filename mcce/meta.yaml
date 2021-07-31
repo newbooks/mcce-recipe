@@ -1,11 +1,12 @@
 package:
   name: mcce
-  # fixed ntg.ftpl
-  version: "1.0.8"
+  # fixed ph/eh energy dependency on T in monte.c 
+  version: "1.0.9"
 
   # Past versions
-  # version: "1.0.6"
+  # version: "1.0.8" fixed ntg.ftpl
   # version: "1.0.7" fixed diff_mc.py, print nothing instead of error when mismatch, fixed fort38_distance.py, allow list2 longer than list1
+  # version: "1.0.6"
 
 source:
   git_url: https://github.com/newbooks/Stable-MCCE.git
@@ -19,13 +20,13 @@ requirements:
 
   run:
     - python
-    - numpy
-    - scipy
-    - matplotlib
-    - pandas
-    - xlrd
-    - openpyxl
-    - requests
+    #- numpy
+    #- scipy
+    #- matplotlib
+    #- pandas
+    #- xlrd
+    #- openpyxl
+    #- requests
 
 about:
   home: https://gunnerlab.github.io/Stable-MCCE/
